@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to CungYa WebSite
 
 You can use the [editor on GitHub](https://github.com/zaraku18/works/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
