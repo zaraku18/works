@@ -9,6 +9,7 @@
     <title>Album example · Bootstrap v5.2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
 
@@ -67,47 +68,119 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      .box{
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;/*區塊置中*/
+        text-align:center;
+        line-height: 50px;
+      }
+      
+      .banner{
+        padding-top: 600px;
+        width:100%;
+        height:100%;
+        background-image:url("assets/pic/dr.jpg");
+      }
+
+      .topbackground{
+        padding-top: 600px;
+        width: 100%;
+        height: 100%;
+        background: url("assets/pic/background.jpg") no-repeat center;
+
+      }
+
+      .quote{
+        width: 50%;
+        margin: 0 auto;
+        font-size: 50px;
+        color: grey;
+        padding-left: 20px;
+        border-left: 10px solid #fff;
+      }
+      .flex {
+        display: flex;
+        height: 30px;
+        padding: 15px;
+        background-color: #61a0f8;
+        flex-direction: row;
+      }
+      .item {
+        flex: 1;
+        background-color: #0a578d;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+     }
+     a:hover, a:visited, a:link, a:active {
+      text-decoration: none;
+    }
     </style>
 
     
   </head>
-  <body>
-    
+<body>
 <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <h4 class="text-white">簡介</h4>
+          <p class="text-white">黃晴椏Info</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
+          <!--<h4 class="text-white">聯絡方式</h4>-->
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a style="text-decoration: none" href="https://www.facebook.com/Huangcingya/" target="_blank" class="fa fa-facebook-f" style="font-size:24px">FaceBook</a></li>
+            <li><a style="text-decoration: none" href="https://www.facebook.com/Huangcingya/" target="_blank" class="text-white">Instagram</a></li>
+            <!--<li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>-->
           </ul>
         </div>
+        <div class="menu-content-area d-flex align-items-center">
+          <!-- Header Social Area -->
+          <div class="header-social-area d-flex align-items-center">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <!-- Menu Icon -->
+          <span class="navbar-toggler-icon" id="menuIcon"></span>
+      </div>
       </div>
     </div>
   </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="navbar navbar-light" style="background-color: #0a578d">
     <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-brand d-flex align-items-center">
+        <img src="assets/pic/dr.jpg" width="30" height="30" alt="">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>-->
+        <strong>作品集</strong>
+      </div>
+      <div class="btn-group align-items-center">
+          <a href="https://www.facebook.com/Huangcingya/" target="_blank" ><i class="fa fa-facebook item" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/Huangcingya/" target="_blank"><i class="fa fa-instagram item" aria-hidden="true"></i></a>
+      </div>
+      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button>-->
     </div>
   </div>
 </header>
 
 <main>
-
-  <section class="py-5 text-center container">
+  <div class="topbackground">
+    <div class="quote">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <!--<section class="p-5 bg-success">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Album example</h1>
@@ -118,24 +191,25 @@
         </p>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <div class="album py-5 bg-light">
     <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+        
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="assets/pic/background.jpg" role="jpg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+            <img src="assets/pic/background.jpg" width="100%" height=225>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="box">小琉球海岸</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
                 </div>
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">9 p</small>
               </div>
             </div>
           </div>
@@ -281,13 +355,12 @@
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+   
   </div>
 </footer>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
       
   </body>
